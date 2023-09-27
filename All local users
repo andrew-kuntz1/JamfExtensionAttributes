@@ -1,0 +1,7 @@
+#!/bin/sh
+
+#  All_local_users.sh
+
+AllUsers=$(dscl . list /Users | grep -v "^_")
+
+echo "<result>$AllUsers</result>"
