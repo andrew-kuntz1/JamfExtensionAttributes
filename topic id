@@ -1,3 +1,4 @@
+#!/bin/bash
 APNS_certificate=`/usr/sbin/system_profiler SPConfigurationProfileDataType | awk '/Topic/{ print $NF }' | sed 's/[";]//g'` 
 
 if [[ "$APNS_certificate" = "" ]]; then 
